@@ -1,0 +1,61 @@
+.card {
+    width: 85%;
+    max-width: 36rem;
+    background-color: var(--color-card-dark-blue);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  &__img {
+    & > img {
+        border-radius: 1rem;
+    }
+  }
+
+  &__title {
+      color: var(--color-white);
+      margin: 2rem 0;
+  }
+
+  &__paragraph {
+      color: var(--color-soft-blue);
+      font-weight: 400;
+      font-size: 1.5rem;
+      
+  }
+
+  &__info {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--color-line-dark-blue);
+      padding: 1.5rem 0;
+    &__price {
+        color: var(--color-cyan);
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    &__time {
+        color: var(--color-soft-blue);
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+  }
+  &__owner {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      & > img {
+        width: 3.5rem;
+        border: 1px solid var(--color-white);
+        border-radius: 50%;
+      }
+      &__name {
+        color: var(--color-soft-blue);
+          & > span {
+            color: var(--color-white);
+          }
+      }
+  }
+}
